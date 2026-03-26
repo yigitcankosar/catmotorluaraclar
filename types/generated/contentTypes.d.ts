@@ -481,6 +481,16 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     Brand: Schema.Attribute.Enumeration<
       ['Mercedes', 'BMW', 'Audi', 'Range Rover']
     >;
+    Category: Schema.Attribute.Enumeration<
+      [
+        'Kaporta & G\u00F6vde',
+        'Ayd\u0131nlatma Grubu',
+        'Elektrik & Elektronik',
+        'Motor Par\u00E7alar\u0131',
+        'Fren Sistemi',
+        'S\u00FCspansiyon',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -41,6 +41,17 @@
     },
     "OEM_Code": {
       "type": "string"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Kaporta & Gövde",
+        "Aydınlatma Grubu",
+        "Elektrik & Elektronik",
+        "Motor Parçaları",
+        "Fren Sistemi",
+        "Süspansiyon"
+      ]
     }
   }
 }
